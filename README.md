@@ -58,3 +58,5 @@ Public Subnet B (AZ-B): 10.0.2.0/24
 Image 4: The AZ of the Subnet and some Other setting put in place.
 
 Enable Auto-assign public IPv4 to ensure that the subnet is reachable through the internet . 
+
+
