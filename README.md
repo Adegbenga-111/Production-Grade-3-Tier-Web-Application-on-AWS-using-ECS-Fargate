@@ -25,5 +25,12 @@ DNS hostnames
 
 Name: my-vpc
 
+As shown in the Image below :
+
+![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(213).png)
+
+Image 02.
+
+
  As shown in the image below :
   
