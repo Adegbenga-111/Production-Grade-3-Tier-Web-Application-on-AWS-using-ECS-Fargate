@@ -109,3 +109,23 @@ Image 9: creation of the  Internet Gateway.
 
 Image 10: Attaching the Internet Gateway to the vpc .
 
+### Step 4 
+
+NAT Gateways (High Availability)
+
+Allocate 2 Elastic IPs, In order to do this , on the vpc page go to " Elastic Ip" to create the two Elastic ip in the AZ.
+
+Create:
+
+NAT-A in Public Subnet A ,
+
+NAT-B in Public Subnet B As shown in the image below :
+
+
+![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(227).png)
+
+Image 11: This is for NAT B , but it is the same process for NAT A just that the Elastic IP that is different. 
+
+
+This ensures private subnets in each AZ have internet access without cross-AZ dependency.
+
