@@ -129,3 +129,36 @@ Image 11: This is for NAT B , but it is the same process for NAT A just that the
 
 This ensures private subnets in each AZ have internet access without cross-AZ dependency.
 
+### Step 5.
+
+ Route Tables helps to direct Network traffic form outside the vpc to the public Subnet to the ALB and , then to the private subnet .
+
+Public Route Table
+
+0.0.0.0/0 → Internet Gateway ( for both ALB-Subnet A & B ) as shown below:
+
+
+![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(229).png)
+
+
+Image 12.
+
+Associate with both public subnets, as shown in the image below:
+
+
+![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(231).png)
+
+Image 13.
+
+Private App Route Tables
+
+App Subnet A → 0.0.0.0/0 → NAT-A
+
+App Subnet B → 0.0.0.0/0 → NAT-B
+
+DB Route Table
+
+No internet route
+
+Local VPC traffic only
+
