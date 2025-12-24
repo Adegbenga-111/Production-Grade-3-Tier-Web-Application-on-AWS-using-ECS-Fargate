@@ -152,13 +152,32 @@ Image 13.
 
 Private App Route Tables
 
-App Subnet A → 0.0.0.0/0 → NAT-A
+App Subnet A → 0.0.0.0/0 → NAT-A , Shown below:
+
+
+![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(232).png)
+
+Image 14 : Creation of the route table.
+
+
+![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(234).png)
+
+Image 15 : 0.0.0.0/0 → NAT-A
+
 
 App Subnet B → 0.0.0.0/0 → NAT-B
+
+![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(234).png)
+
+Image 16 : route table 0.0.0.0/0 -> NAT B
 
 DB Route Table
 
 No internet route
 
-Local VPC traffic only
+Local VPC traffic only , as shown below :
+
+![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(278).png)
+
+Image 17.
 
