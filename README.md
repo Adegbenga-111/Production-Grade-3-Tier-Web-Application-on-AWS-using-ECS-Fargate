@@ -253,4 +253,12 @@ To push the image i created a repo for my images on aws , named web-app , as sho
  ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(294).png)
 
  Image 24.
- 
+
+In order to push the image , i had to set up two things 
+- Install aws cli , as shown below
+   ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(336).png)
+
+     Image 25.
+- Create a user , save the user information , and use that infromation to log in .
+   ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(341).png)
+  Image 26 : loging successfully after some back and front .
