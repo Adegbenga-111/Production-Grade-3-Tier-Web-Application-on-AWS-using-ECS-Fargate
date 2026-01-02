@@ -11,6 +11,7 @@ The architecture incorporates Auto Scaling, IAM roles, private subnets, NAT Gate
 #### Note : This project will be in Phases 
 
 ### Phase 1 :Networking (VPC Foundation)
+
 ### Step 1
 
 Create VPC
@@ -181,3 +182,19 @@ Local VPC traffic only , as shown below :
 
 Image 17.
 
+### Phase 2 : Create  Relational DataBase And Creatiion Of The Table 
+
+#### Step 6 :
+Engine: PostgreSQL
+
+Multi-AZ: NO ( not allowed on free t
+
+Public access:  Yes ( to allow connenction to the DB)
+
+Subnet group: DB subnets
+
+SG: RDS SG
+The Image below is the summary of the configuration of the DB :
+ ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(346).png)
+
+Imaage 18.
