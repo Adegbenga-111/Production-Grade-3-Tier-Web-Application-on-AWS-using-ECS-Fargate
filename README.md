@@ -209,7 +209,7 @@ Connecting to the DB to create the db and tables with the following Pgsql comman
 
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
-  name VARCHAR(100),
+  name VARCHAR(100)
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ); "
 
@@ -227,3 +227,21 @@ Than i ran the command , as shown belown :
  Image 20: In the above image , when the command  ran it said that testdb was aleady create so i connected to it with '\c testdb' command and create the table , as shown in the lower part of the image above .  
 
 ### Phase 2 : Building The EC2 App Server 
+Launching an EC2 in the App subnet in the VPC we created , The specs of the EC2 are as follows :
+
+- OS -> Ubuntu
+
+- Instance type -> t3.micro
+
+-Public IP -> Disable
+
+- Security Group -> allow ssh from anywhere . -> allow https/http from The Application Load Balancer .
+  As shown in the Images below
+
+   ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(367).png)
+
+  Image 20.
+
+ ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(368).png)
+
+ Image 21.
