@@ -304,3 +304,32 @@ Then created a cloudfront distribution , update s3 policy , and change  the orig
  ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(410).png) 
 
  Image 30 : Changing of the origin to the s3 endpoint .
+
+
+### Phase 4 :
+creating the Application Load Balancer , Add target group , setting the portocol . 
+The images below shows how the ALB was configured in the order :
+
+ ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(375).png) 
+ 
+ Image 31.
+
+  ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(376).png)  
+
+  Image 32.
+
+  ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(377).png)
+
+  Image 33. 
+
+ ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(378).png)  
+
+ Image 34.
+
+ ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(379).png)  
+
+ Image 35.
+
+ Then the api dns where add to the frontend in order to send the data from the frontend to the backend in json format .
+
+### Issues And 
