@@ -332,4 +332,37 @@ The images below shows how the ALB was configured in the order :
 
  Then the api dns where add to the frontend in order to send the data from the frontend to the backend in json format .
 
-### Issues And 
+### Issues Faced During the Project & How They Were Solved
+
+##### 1. Database Connectivity Issues (EC2 → RDS)
+❌ Problem
+- EC2 instance could not connect to the PostgreSQL RDS instance. Connection timeouts and authentication failures occurred.
+
+🔍 Root Cause
+-RDS security group did not allow inbound traffic from the EC2 security group.
+-Initial confusion around subnet routing and whether routes were required.
+
+✅ Solution
+Configured the RDS security group to allow inbound traffic on port 5432 from the EC2 security group (not from public IPs).
+Verified both resources were in the same VPC.
+Confirmed no route table changes were needed since traffic was within the VPC.
+
+Lesson learned:
+-Security Groups control access inside a VPC—not route tables.
+
+#### 2. Private EC2 Accessibility (SSH Permission Denied) :
+   
+❌ Problem
+SSH access to a private EC2 instance failed (permission denied).
+
+🔍 Root Cause
+- Attempted to SSH directly to a private IP.
+- Incorrect user (ec2-user instead of ubuntu).
+
+✅ Solution
+- Used a bastion / public EC2 or session manager where applicable.
+- Corrected the SSH username to ubuntu for Ubuntu AMIs.
+- Ensured key pairs for both the public and private ec2 are in peagent, and allow agent forwarding in putty .
+
+Lesson learned:
+Private instances require controlled access paths.
