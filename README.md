@@ -8,6 +8,11 @@ The solution consists of a static frontend hosted on Amazon S3, a containerized 
 
 The architecture incorporates Auto Scaling, IAM roles, private subnets, NAT Gateways, VPC Flow Logs, Amazon CloudWatch, and Amazon SNS to reflect real-world, enterprise-ready cloud infrastructure practices.
 
+
+![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(452).png)
+
+Image 1
+
 #### Note : This project will be in Phases 
 
 ### Phase 1 :Networking (VPC Foundation)
