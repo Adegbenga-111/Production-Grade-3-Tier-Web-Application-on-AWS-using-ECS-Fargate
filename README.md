@@ -478,3 +478,17 @@ Added exception handling:
 
 Lesson learned:
 Controlled error visibility speeds up debugging.
+
+####  8. Frontend Success Message Not Displaying
+❌ Problem
+-Backend succeeded, but frontend didn’t show success.
+🔍 Root Cause
+-Fetch request failed silently due to CORS / HTTPS issues.
+
+✅ Solution
+-Fixed HTTPS and CORS.
+-Parsed JSON response correctly.
+-Displayed result.message.
+
+Lesson learned:
+Frontend failures often hide backend success.
