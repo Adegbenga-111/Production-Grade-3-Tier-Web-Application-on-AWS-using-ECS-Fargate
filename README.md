@@ -492,3 +492,15 @@ Controlled error visibility speeds up debugging.
 
 Lesson learned:
 Frontend failures often hide backend success.
+
+
+### Final Test 
+This final test involve trying to send the name and phone , in order to check if the infrastructure is working the way it should , and by the Image below , IT WORKS .
+
+ ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(451).png)
+
+ Image 40.
+
+### Conclusion
+
+This project demonstrates the practical implementation of cloud fundamentals, security best practices, and troubleshooting skills expected of an entry-level Cloud Engineer or Cloud Support Engineer. It goes beyond theory by addressing real deployment challenges and resolving them using AWS tools.
