@@ -281,3 +281,12 @@ create /api/save.php in the /var/www/html directory. In order to do so , i had t
    ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(444).png)
 
 Image 25.
+
+### Phase 3 : S3 and Cloudfront
+
+#### Step 11
+Create s3 bucket name 'app-frontend100' , review of the configuration is shown below :
+
+   ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(407).png)  
+
+Image 26.
