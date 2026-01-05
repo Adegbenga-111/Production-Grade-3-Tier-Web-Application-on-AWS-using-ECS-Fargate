@@ -410,3 +410,44 @@ Lesson learned:
 
 Lesson learned:
 Modern browsers enforce strict HTTPS security.
+
+#### 5 CORS Errors Blocking Frontend Requests
+❌ Problem
+- Browser blocked API calls due to CORS policy.
+- OPTIONS requests failed.
+
+🔍 Root Cause
+- Backend did not handle preflight OPTIONS requests.
+- Missing CORS headers in PHP API.
+
+✅ Solution
+- Added CORS headers in save.php:
+
+   "- Access-Control-Allow-Origin
+   - Access-Control-Allow-Methods
+   - Access-Control-Allow-Headers "
+
+   ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(444).png)
+
+Image 39
+- Properly handled OPTIONS requests.
+
+Lesson learned:
+CORS is a browser security rule—not a backend network issue.
+
+#### 6 API Returning 400 Errors (“Name and phone required”)
+❌ Problem
+- Backend rejected valid frontend submissions.
+🔍 Root Cause
+- JSON payload not being read correctly.
+- Missing Content-Type: application/json header.
+
+✅ Solution
+-Used:
+   json_decode(file_get_contents("php://input"), true);
+
+- Ensured frontend sent JSON correctly.
+Validated fields properly.
+
+Lesson learned:
+- APIs must explicitly handle JSON input.
