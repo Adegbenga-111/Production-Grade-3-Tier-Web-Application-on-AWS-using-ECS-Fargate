@@ -269,3 +269,15 @@ Now i had to change the permission to the var/www/html using the following comma
   Image 23.
 
 The following command were used to allow apache to read files in that directory.
+
+#### Step 10
+create /api/save.php in the /var/www/html directory. In order to do so , i had to create with /api in /var/www/html using sudo mkdir -p /var/www/html/api , as shown below :
+
+   ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(450)1.png)
+
+   Image 24.
+ Then create and put the save.php in /var/www/html/api/ using "sudo nano /var/www/html/api/save.php " command as shown below :
+
+   ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(444).png)
+
+Image 25.
