@@ -227,6 +227,7 @@ Than i ran the command , as shown belown :
  Image 20: In the above image , when the command  ran it said that testdb was aleady create so i connected to it with '\c testdb' command and create the table , as shown in the lower part of the image above .  
 
 ### Phase 2 : Building The EC2 App Server 
+#### Step 8:
 Launching an EC2 in the App subnet in the VPC we created , The specs of the EC2 are as follows :
 
 - OS -> Ubuntu
@@ -245,3 +246,26 @@ Launching an EC2 in the App subnet in the VPC we created , The specs of the EC2 
  ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(368).png)
 
  Image 21.
+
+#### Step 9:
+ Now i connected to the App EC2 througth the public EC2 using the "sodu ubuntu@10.0.11.202 "
+ After which i install :
+ - Apache 2 with "sudo apt install Apache 2 "
+ - php with pgsql with "sodu apt install  -y php -pgsql , as shown in the image below:
+   
+    ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(446).png)
+
+   Image 21.
+Now i had to change the permission to the var/www/html using the following command :
+-  sudo chmod -R apache:apache  /var/www/html , as shown below :
+
+    ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(448).png)
+
+    Image 22.
+- sudo  chmod -R 755 /var/www/html , as shown below :
+
+  ![Alt aws](https://github.com/Adegbenga-111/Production-Grade-3-Tier-Web-Application-on-AWS-using-ECS-Fargate/blob/main/Screenshot%20(449).png)
+
+  Image 23.
+
+The following command were used to allow apache to read files in that directory.
