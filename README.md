@@ -451,3 +451,30 @@ Validated fields properly.
 
 Lesson learned:
 - APIs must explicitly handle JSON input.
+#### 7 Database Error Without Useful Debug Information
+❌ Problem
+Backend returned:
+
+   {"message":"Database error"}
+
+with no explanation.
+
+🔍 Root Cause
+Exception details were suppressed.
+
+✅ Solution
+Added exception handling:
+  
+   catch (Exception $e) {
+   
+   echo json_encode(
+   [
+       
+   "message" => "Database error",
+   
+   "error" => $e->getMessage()
+    ]);
+}
+
+Lesson learned:
+Controlled error visibility speeds up debugging.
